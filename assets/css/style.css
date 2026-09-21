@@ -48,7 +48,7 @@
             --secondary-color: #312f2f;
             --text-color: #f7efef;
             --accent-color: #ffa500;
-            --shadow: 0 20px 60px rgba(125, 130, 141, 0.12), 0 1px 2px rgba(173, 175, 182, 0.08);
+            --shadow: 0 20px 60px rgba(152, 156, 163, 0.12), 0 1px 2px rgba(214, 215, 219, 0.322);
         }
     }
 }
@@ -80,7 +80,9 @@
     video,
     canvas {
         display: block;
-        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     button,
@@ -116,6 +118,11 @@
         text-decoration: none;
     }
 
+    button {
+        background: transparent;
+        border: none;
+    }
+
     :focus-visible {
         outline: 3px solid var(--color-focus);
         outline-offset: 3px;
@@ -126,24 +133,21 @@
     .section {
         padding-left: clamp(24px, 5.5vw, 88px);
         padding-right: clamp(24px, 5.5vw, 88px);
-    }
-
-    .container {
-        width: min(100% - 2rem, var(--content-width));
-        margin-inline: auto;
-    }
-
-    .stack>*+* {
-        margin-block-start: var(--stack-space, var(--space-4));
-    }
-}
-
-@layer components {
-    .section {
         padding-top: clamp(92px, 12vw, 180px);
         padding-bottom: clamp(92px, 12vw, 180px);
     }
 
+    /* .container {
+        width: min(100% - 2rem, var(--content-width));
+        margin-inline: auto;
+    } */
+
+    /* .stack>*+* {
+        margin-block-start: var(--stack-space, var(--space-4));
+    } */
+}
+
+@layer components {
     .site-header {
         height: 88px;
         display: flex;
@@ -427,12 +431,14 @@
         box-shadow: 0 0 0 35px var(--accent-color), 0 0 0 72px var(--accent-color);
     }
 
-    .hero-art img {
+    .hero-art .image {
         position: relative;
         width: 300px;
         inset: 29.5%;
         border-radius: 50%;
+        overflow: hidden;
     }
+
 
     .marquee {
         overflow: hidden;
@@ -468,6 +474,9 @@
         }
     }
 
+    /* .section.services {
+        margin: 90px;
+    } */
     .section-top {
         display: grid;
         grid-template-columns: .9fr 2fr .85fr;
@@ -628,34 +637,69 @@
     }
 
     .projects-list {
+        width: 70%;
+        margin: auto;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
-        gap: 24px;
+        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+        gap: clamp(50px, 6vw, 88px);
+        margin-bottom: 150px;
     }
+
     .projects-list .project-item {
         display: block;
         text-decoration: none;
         color: var(--text-color);
-        background: var(--secondary-color);
+        box-shadow: var(--shadow);
         border-radius: var(--radius-md);
-        overflow: hidden;
-        box-shadow: var(--shadow-md);
         transition: var(--transition);
     }
 
     .projects-list .project-item:hover {
         transform: translateY(-5px);
     }
-    .projects-list .project-item img {
+
+    .projects-list .project-item .project-image {
         width: 100%;
-        height: 200px;
-        /* aspect-ratio: 1/1; */
-        object-fit: cover;
+        height: clamp(250px, 30vw, 320px);
+        background: var(--secondary-color);
+        border-radius: var(--radius-md);
+        overflow: hidden;
     }
 
+    .heading {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
 
+    .heading.green-clean {
+        margin-bottom: 0;
+    }
 
+    .supporting {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
 
+    .project-details {
+        display: grid;
+        grid-template-columns: 3fr auto;
+        align-items: baseline;
+        gap: 10px;
+        padding: 14px;
+    }
+
+    .js .reveal {
+        opacity: 0;
+        transform: translateY(26px);
+        transition: opacity .7s cubic-bezier(.2, .7, .2, 1), transform .7s cubic-bezier(.2, .7, .2, 1);
+    }
+
+    .js .reveal.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
 
 
     @media (prefers-color-scheme: dark) {
@@ -743,6 +787,7 @@
     .fs-display-sm {
         font-size: var(--fs-display-sm);
     }
+
     .fs-heading {
         font-size: var(--fs-heading);
     }
@@ -778,5 +823,10 @@
     .fw-900 {
         font-weight: var(--fw-900);
     }
+
+    .text-accent {
+        color: var(--accent-color);
+    }
+
 
 }

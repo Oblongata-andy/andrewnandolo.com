@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>document.documentElement.classList.add('js');</script>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Andrew Nandolo | Portfolio</title>
 </head>
@@ -62,7 +63,10 @@
                 <div class="art-orbit orbit-three"></div>
                 <div class="art-disc">
                 </div>
-                <img src="assets/images/user-icon.jpg" alt="" srcset="">
+                <div class="image">
+                    <img src="assets/images/user-icon.jpg" alt="" srcset="">
+                </div>
+                
             </div>
         </section>
         <section class="section marquee" aria-label="Capabilities">
@@ -84,7 +88,7 @@
             <div class="section-top reveal">
                 <p class="sm-text"><i></i> My services </p>
                 <h2 id="services-title" class="section-title fs-display-sm">What I do</h2>
-                <p class="section-intro">
+                <p class="section-intro fs-small">
                     I help businesses and organisations communicate with clarity and confidence through design and
                     development.
                 </p>
@@ -157,162 +161,230 @@
             <div class="section-top reveal">
                 <p class="sm-text"><i></i> A few selected projects</p>
                 <h2 id="work-title" class="section-title fs-display-sm">Selected Work</h2>
-                <p class="section-intro">
+                <p class="section-intro fs-small">
                     I have worked with a variety of clients, from small businesses to organisations, helping them
                     achieve their goals through design and development.
                 </p>
             </div>
 
-            <h3 class="fs-heading">Website projects</h3>
-            <div class="projects-list">
+            <h3 class="heading fs-heading" id="websites-heading">Website projects</h3>
+            <div class="projects-list" aria-labelledby="websites-heading">
                 <article class="project-item">
                     <div class="project-image">
-                        <img src="assets/images/project1.jpg" alt="Project 1" srcset="">
+                        <img src="assets/images/project1.jpg" alt="Ambassadors Charity Trust Website" srcset="">
                     </div>
-                    <div class="project-details">
-                        <h3 class="project-title">Project 1</h3>
-                        <p class="project-desc">
-                            Description of Project 1.
-                        </p>
+                    <div class="project-details fs-body">
+                        <div class="project-desc">
+                            <h3 class="project-title fw-400">Ambassadors Charity Trust</h3>
+                            <p class="fs-smaller">Designing, Developing, Hosting, Management and Support</p>
+                        </div>
+                        <a href="#" target="_blank" class="button text-accent">Visit Website &nbsp;&nbsp;<span class="arrow">↗</span></a>
                     </div>
                 </article>
 
                 <article class="project-item">
                     <div class="project-image">
-                        <img src="assets/images/project2.jpg" alt="Project 2" srcset="">
+                        <img src="assets/images/project2.jpg" alt="KISS Initiative Website" srcset="">
                     </div>
-                    <div class="project-details">
-                        <h3 class="project-title">Project 2</h3>
-                        <p class="project-desc">
-                            Description of Project 2.
-                        </p>
-                    </div>
-                </article>
-                <article class="project-item">
-                    <div class="project-image">
-                        <img src="assets/images/project2.jpg" alt="Project 2" srcset="">
-                    </div>
-                    <div class="project-details">
-                        <h3 class="project-title">Project 2</h3>
-                        <p class="project-desc">
-                            Description of Project 2.
-                        </p>
+                    <div class="project-details fs-body">
+                        <div class="project-desc">
+                            <h3 class="project-title fw-400">KISS Initiative</h3>
+                            <p class="fs-smaller">Designing, Developing, Hosting, Management and Support</p>
+                        </div>
+                        <button class="button text-accent" disabled title="Website no longer live">Visit Website</button>
                     </div>
                 </article>
             </div>
 
-            <h3 class="fs-heading">Social Media Designs</h3>
-            <div class="projects-list">
+            <h3 class="heading fs-heading" id="social-media-heading">Print and Digital Designs</h3>
+            <div class="projects-list" aria-labelledby="social-media-heading">
                 <article class="project-item">
                     <div class="project-image">
-                        <img src="assets/images/project1.jpg" alt="Project 1" srcset="">
+                        <img src="assets/images/banner.jpg" alt="Rollup banner designs" srcset="">
                     </div>
-                    <div class="project-details">
-                        <h3 class="project-title">Project 1</h3>
-                        <p class="project-desc">
-                            Description of Project 1.
-                        </p>
+                    <div class="project-details fs-body">
+                        <div class="project-desc">
+                            <h3 class="project-title fw-400">Rollup banners</h3>
+                            <p class="fs-smaller">Ambassadors Charity Trust</p>
+                        </div>
+                        <button class="button text-accent">View</button>
                     </div>
                 </article>
 
                 <article class="project-item">
                     <div class="project-image">
-                        <img src="assets/images/project2.jpg" alt="Project 2" srcset="">
+                        <img src="assets/images/sm-design.png" alt="Social media designs" srcset="">
                     </div>
-                    <div class="project-details">
-                        <h3 class="project-title">Project 2</h3>
-                        <p class="project-desc">
-                            Description of Project 2.
-                        </p>
+                    <div class="project-details fs-body">
+                        <div class="project-desc">
+                            <h3 class="project-title fw-400">Social media designs</h3>
+                            <p class="fs-smaller">Ambassadors Charity Trust, Akuka Lodge, Ascend Foundry Academy, Aliko Business Enterprise</p>
+                        </div>
+                        <button class="button text-accent">View</button>
                     </div>
                 </article>
                 <article class="project-item">
                     <div class="project-image">
-                        <img src="assets/images/project2.jpg" alt="Project 2" srcset="">
+                        <img src="assets/images/b-card.png" alt="Business card design" srcset="">
                     </div>
-                    <div class="project-details">
-                        <h3 class="project-title">Project 2</h3>
-                        <p class="project-desc">
-                            Description of Project 2.
-                        </p>
+                    <div class="project-details fs-body">
+                        <div class="project-desc">
+                            <h3 class="project-title fw-400">Business cards</h3>
+                            <p class="fs-smaller">Chipambano Trust Fund</p>
+                        </div>
+                        <button class="button text-accent">View</button>
+                    </div>
+                </article>
+                <article class="project-item">
+                    <div class="project-image">
+                        <img src="assets/images/calendar-designs.png" alt="Calendar design" srcset="">
+                    </div>
+                    <div class="project-details fs-body">
+                        <div class="project-desc">
+                            <h3 class="project-title fw-400">Calendars</h3>
+                            <p class="fs-smaller">Akuka Lodge, Tiny Toes Creche Nursery School</p>
+                        </div>
+                        <button class="button text-accent">View</button>
                     </div>
                 </article>
             </div>
 
-            <h3 class="fs-heading">Green Clean Malawi Conference Campaign</h3>
-            <div class="projects-list">
+            <h3 class="heading green-clean fs-heading" id="green-clean">Green Clean Malawi <br>Conference Campaign Designs</h3>
+            <p class="supporting fs-small">An online conference hosted by Ambassadors Charity Trust</p>
+            <div class="projects-list" aria-labelledby="green-clean">
                 <article class="project-item">
                     <div class="project-image">
-                        <img src="assets/images/project1.jpg" alt="Project 1" srcset="">
+                        <img src="assets/images/con-img1.jpg" alt="Conference flyer 1" srcset="">
                     </div>
-                    <div class="project-details">
-                        <h3 class="project-title">Project 1</h3>
-                        <p class="project-desc">
-                            Description of Project 1.
-                        </p>
+                <div class="project-details fs-body">
+                    <div class="project-desc">
+                        <h3 class="project-title fw-400"></h3>
+                        <p class="fs-smaller"></p>
                     </div>
+                    <button class="button text-accent">View</button>
+                </div>
                 </article>
 
                 <article class="project-item">
                     <div class="project-image">
-                        <img src="assets/images/project2.jpg" alt="Project 2" srcset="">
+                        <img src="assets/images/con-img2.jpg" alt="Conference flyer 2" srcset="">
                     </div>
-                    <div class="project-details">
-                        <h3 class="project-title">Project 2</h3>
-                        <p class="project-desc">
-                            Description of Project 2.
-                        </p>
+                <div class="project-details fs-body">
+                    <div class="project-desc">
+                        <h3 class="project-title fw-400"></h3>
+                        <p class="fs-smaller"></p>
                     </div>
+                    <button class="button text-accent">View</button>
+                </div>
                 </article>
+
                 <article class="project-item">
                     <div class="project-image">
-                        <img src="assets/images/project2.jpg" alt="Project 2" srcset="">
+                        <img src="assets/images/con-img3.jpg" alt="Conference flyer 3" srcset="">
                     </div>
-                    <div class="project-details">
-                        <h3 class="project-title">Project 2</h3>
-                        <p class="project-desc">
-                            Description of Project 2.
-                        </p>
+                <div class="project-details fs-body">
+                    <div class="project-desc">
+                        <h3 class="project-title fw-400"></h3>
+                        <p class="fs-smaller"></p>
                     </div>
+                    <button class="button text-accent">View</button>
+                </div>
                 </article>
+
+                <article class="project-item">
+                    <div class="project-image">
+                        <img src="assets/images/con-img4.jpg" alt="Conference flyer 4" srcset="">
+                    </div>
+                <div class="project-details fs-body">
+                    <div class="project-desc">
+                        <h3 class="project-title fw-400"></h3>
+                        <p class="fs-smaller"></p>
+                    </div>
+                    <button class="button text-accent">View</button>
+                </div>
+                </article>
+
+                <article class="project-item">
+                    <div class="project-image">
+                        <img src="assets/images/con-img5.jpg" alt="Conference flyer 5" srcset="">
+                    </div>
+                <div class="project-details fs-body">
+                    <div class="project-desc">
+                        <h3 class="project-title fw-400"></h3>
+                        <p class="fs-smaller"></p>
+                    </div>
+                    <button class="button text-accent">View</button>
+                </div>
+                </article>
+
+                <article class="project-item">
+                    <div class="project-image">
+                        <img src="assets/images/con-img6.jpg" alt="Conference flyer 6" srcset="">
+                    </div>
+                <div class="project-details fs-body">
+                    <div class="project-desc">
+                        <h3 class="project-title fw-400"></h3>
+                        <p class="fs-smaller"></p>
+                    </div>
+                    <button class="button text-accent">View</button>
+                </div>
+                </article>
+
+               
             </div>
 
-            <h3 class="fs-heading">Logos</h3>
-            <div class="projects-list">
+            <h3 class="heading fs-heading" id="logos-heading">Logos</h3>
+            <div class="projects-list" aria-labelledby="logos-heading">
                 <article class="project-item">
                     <div class="project-image">
-                        <img src="assets/images/project1.jpg" alt="Project 1" srcset="">
+                        <img src="assets/images/logo1.jpg" alt="logo for Tiny Toes Creche" srcset="">
                     </div>
-                    <div class="project-details">
-                        <h3 class="project-title">Project 1</h3>
-                        <p class="project-desc">
-                            Description of Project 1.
-                        </p>
+                    <div class="project-details fs-body">
+                        <div class="project-desc">
+                            <h3 class="project-title fw-400">Tiny Toes Creche</h3>
+                            <!-- <p class="fs-smaller">Akuka Lodge, Tiny Toes Creche Nursery School</p> -->
+                        </div>
+                        <button class="button text-accent">View</button>
+                    </div>
+                </article>
+                <article class="project-item">
+                    <div class="project-image">
+                        <img src="assets/images/logo2.png" alt="logo for Chipambano Trust Fund" srcset="">
+                    </div>
+                    <div class="project-details fs-body">
+                        <div class="project-desc">
+                            <h3 class="project-title fw-400">Chipambano Trust Fund</h3>
+                            <!-- <p class="fs-smaller">Akuka Lodge, Tiny Toes Creche Nursery School</p> -->
+                        </div>
+                        <button class="button text-accent">View</button>
+                    </div>
+                </article>
+                <article class="project-item">
+                    <div class="project-image">
+                        <img src="assets/images/logo3.jpg" alt="logo for Chipambano Trust Fund" srcset="">
+                    </div>
+                    <div class="project-details fs-body">
+                        <div class="project-desc">
+                            <h3 class="project-title fw-400">Chipambano Trust Fund</h3>
+                            <!-- <p class="fs-smaller">Akuka Lodge, Tiny Toes Creche Nursery School</p> -->
+                        </div>
+                        <button class="button text-accent">View</button>
+                    </div>
+                </article>
+                <article class="project-item">
+                    <div class="project-image">
+                        <img src="assets/images/logo4.jpg" alt="logo for Creative Brenz Grafix" srcset="">
+                    </div>
+                    <div class="project-details fs-body">
+                        <div class="project-desc">
+                            <h3 class="project-title fw-400">Creative Brenz Grafix</h3>
+                            <!-- <p class="fs-smaller">Akuka Lodge, Tiny Toes Creche Nursery School</p> -->
+                        </div>
+                        <button class="button text-accent">View</button>
                     </div>
                 </article>
 
-                <article class="project-item">
-                    <div class="project-image">
-                        <img src="assets/images/project2.jpg" alt="Project 2" srcset="">
-                    </div>
-                    <div class="project-details">
-                        <h3 class="project-title">Project 2</h3>
-                        <p class="project-desc">
-                            Description of Project 2.
-                        </p>
-                    </div>
-                </article>
-                <article class="project-item">
-                    <div class="project-image">
-                        <img src="assets/images/project2.jpg" alt="Project 2" srcset="">
-                    </div>
-                    <div class="project-details">
-                        <h3 class="project-title">Project 2</h3>
-                        <p class="project-desc">
-                            Description of Project 2.
-                        </p>
-                    </div>
-                </article>
+               
             </div>
 
         </section>
