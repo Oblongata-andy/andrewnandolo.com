@@ -1,5 +1,13 @@
 @font-face {
-    font-family: Manrope, Inter;
-    src: url(Manrope-VariableFont_wght.ttf);
-    src: url(Inter-VariableFont_opsz\,wght.ttf);
+    font-family: "Manrope";
+    src: url("Manrope-VariableFont_wght.ttf") format("truetype");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("Inter-VariableFont_opsz,wght.ttf") format("truetype");
+    font-style: normal;
+    font-display: swap;
 }
